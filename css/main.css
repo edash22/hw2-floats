@@ -1,27 +1,40 @@
-img {
-	width: 400px;
-	float: left;
-	padding-top: 60px;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-h1 {
-	float: right;
+.container {
+    background: rgba(0, 255, 245, 0.32);
+    margin: auto;
+    max-width: 800px;
+    padding: 15px;
 }
 
-/* Move the first paragraph to the top of the page */
-p:nth-of-type(1) {
-	position:absolute;
-	top: 0px;
-	width: 800px;
+.content {
+    background: rgba(113, 255, 0, 0.69);
+    min-height: 500px;
 }
 
-/* Gently offset the second paragraph */
-p:nth-of-type(2) {
-	position:relative;
-	top: 60px;
+.sidebar {
+    background: rgb(208, 157, 255);
+    min-height: 500px;
+    float: right;
+    width: 175px;
 }
 
-/* Third paragraph begins below the image */
-p:nth-of-type(3) {
-	clear:left;
+.page-heading {
+    background: rgba(255, 0, 0, 0.79);
+}
+
+.post-date {
+
+}
+
+.image {
+    background: gray;
+    height: 200px;
+    width: 300px;
+}
+
+article {
+
 }
