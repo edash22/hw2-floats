@@ -1,12 +1,27 @@
 img {
 	width: 400px;
 	float: left;
+	padding-top: 60px;
 }
 
 h1 {
 	float: right;
 }
 
+/* Move the first paragraph to the top of the page */
+p:nth-of-type(1) {
+	position:absolute;
+	top: 0px;
+	width: 800px;
+}
+
+/* Gently offset the second paragraph */
+p:nth-of-type(2) {
+	position:relative;
+	top: 60px;
+}
+
+/* Third paragraph begins below the image */
 p:nth-of-type(3) {
 	clear:left;
 }
